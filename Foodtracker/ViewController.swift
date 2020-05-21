@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController , UITextFieldDelegate{
     //MARK: properties
     
 
@@ -30,6 +30,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad();
         // Do any additional setup after loading the view.
+        //When the ViewController instance is loaded, it sets itself as the delegate of its nameTextField property
+        nameTextField.delegate = self;
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,6 +39,18 @@ class ViewController: UIViewController {
         
         //method stub
     }
+    //MARK: UITExtFieldDelegate
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        //Hide the keyboard
+        textField.resignFirstResponder();
+        return true;
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        mealNameLabel.text = textField.text;
+    }
+    
     
     //MARK: Actions
     
