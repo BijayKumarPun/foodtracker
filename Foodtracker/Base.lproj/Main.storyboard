@@ -41,14 +41,22 @@
                                     <constraint firstAttribute="trailing" secondItem="bFO-4g-7Zh" secondAttribute="trailing" id="d6k-tv-i8h"/>
                                 </constraints>
                             </stackView>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="defaultPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="bny-Fy-cQI">
+                                <rect key="frame" x="20" y="180" width="360" height="360"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bny-Fy-cQI" secondAttribute="height" multiplier="9:8" id="0LE-Th-dkM"/>
+                                </constraints>
+                                <viewLayoutGuide key="safeArea" id="Ean-b1-eod"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Se-vA-Yhh" secondAttribute="trailing" constant="20" id="7Cd-rI-sYy"/>
-                            <constraint firstItem="9Se-vA-Yhh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="OsN-EM-lI1"/>
-                            <constraint firstItem="9Se-vA-Yhh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="fP5-Dh-Tgp"/>
+                            <constraint firstItem="bny-Fy-cQI" firstAttribute="top" secondItem="9Se-vA-Yhh" secondAttribute="bottom" constant="7.5" id="2iz-Ar-WwN"/>
+                            <constraint firstItem="zEz-UI-MZc" firstAttribute="trailing" secondItem="9Se-vA-Yhh" secondAttribute="trailing" constant="20" id="7Cd-rI-sYy"/>
+                            <constraint firstItem="9Se-vA-Yhh" firstAttribute="leading" secondItem="zEz-UI-MZc" secondAttribute="leading" constant="20" id="OsN-EM-lI1"/>
+                            <constraint firstItem="9Se-vA-Yhh" firstAttribute="top" secondItem="zEz-UI-MZc" secondAttribute="top" constant="20" id="fP5-Dh-Tgp"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <viewLayoutGuide key="safeArea" id="zEz-UI-MZc"/>
                     </view>
                     <connections>
                         <outlet property="mealNameLabel" destination="WHb-uu-5GL" id="gHv-bR-ZTX"/>
@@ -60,4 +68,7 @@
             <point key="canvasLocation" x="137.68115942028987" y="138.61607142857142"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="defaultPhoto" width="360" height="360"/>
+    </resources>
 </document>
