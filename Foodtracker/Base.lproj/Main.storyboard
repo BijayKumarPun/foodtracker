@@ -38,6 +38,7 @@
                                     </button>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="bFO-4g-7Zh" firstAttribute="top" secondItem="WHb-uu-5GL" secondAttribute="bottom" constant="12" id="WfV-du-MOs"/>
                                     <constraint firstAttribute="trailing" secondItem="bFO-4g-7Zh" secondAttribute="trailing" id="d6k-tv-i8h"/>
                                 </constraints>
                             </stackView>
@@ -54,6 +55,11 @@
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JP2-nX-ivB" customClass="RatingControl" customModule="Foodtracker" customModuleProvider="target">
                                 <rect key="frame" x="20" y="548" width="374" height="110"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startCount">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
