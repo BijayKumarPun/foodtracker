@@ -20,7 +20,11 @@ import UIKit
     */
     //MARK: properties
     private var ratingButtons = [UIButton](); //property with list of buttons
-    var rating = 0; //controls' rating'
+    var rating = 0 {
+        didSet{
+            updateButtonSelectionStates();
+        }
+    }//controls' rating'
     
     @IBInspectable var starSize: CGSize = CGSize(width: 44.0, height: 44.0){
         didSet{
@@ -65,7 +69,9 @@ import UIKit
         
         for _ in 0..<startCount{ //half-open range operator(..<) doesn't include the upper number, so this goes from 0 to 4, the underscore _ is  a
             // wildcard, which can be used when we don't need to know which iterations of the loop is currently executing
-            let button = UIButton();
+            let button: UIButton!
+            
+            button = UIButton();
             
             //button.backgroundColor = UIColor.red;
             button.setImage(emptyStar, for: .normal);
@@ -89,13 +95,40 @@ import UIKit
             //add the new button to the rating button array
             ratingButtons.append(button);
         
-    }
+        }
+        updateButtonSelectionStates();
     }
     
     //MARK: Button action
     func ratingButtonTapped(button: UIButton){
-        print("button pressed ");
+      //  print("button pressed ");
+        
+        func ratingButtonTapped(button: UIButton){
+            guard let index = ratingButtons.index(of: button) else{
+                fatalError("The button, \(button), is not in the ratingButtons array\(ratingButtons)");
+        
+            }
+            
+            //Calculate the rating of the selected button
+            let selectedRating = index + 1;
+            if selectedRating == rating{
+                //If the selected star represents the current rating, reset the rating to 0.
+                rating = 0
+                
+            }else{
+                //Otherwise set the rating to the selcted star
+                rating = selectedRating
+            }
+        }
     }
     
+    private func updateButtonSelectionStates(){
+        for(index, button) in ratingButtons.enumerated(){
+            //If the index of a button is less than the rating, that button should be selected.
+            button.isSelected = index < rating;
+            
+            setupButtons();
+    }
 
+}
 }
