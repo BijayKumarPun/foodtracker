@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		77579BCF247775DF00E8FBDB /* RatingControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77579BCE247775DF00E8FBDB /* RatingControl.swift */; };
 		77E41D9924758E9E00B798DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E41D9824758E9E00B798DC /* AppDelegate.swift */; };
 		77E41D9B24758E9E00B798DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E41D9A24758E9E00B798DC /* SceneDelegate.swift */; };
 		77E41D9D24758E9E00B798DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77E41D9C24758E9E00B798DC /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		77579BCE247775DF00E8FBDB /* RatingControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingControl.swift; sourceTree = "<group>"; };
 		77E41D9524758E9E00B798DC /* Foodtracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodtracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77E41D9824758E9E00B798DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77E41D9A24758E9E00B798DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +84,7 @@
 				77E41D9824758E9E00B798DC /* AppDelegate.swift */,
 				77E41D9A24758E9E00B798DC /* SceneDelegate.swift */,
 				77E41D9C24758E9E00B798DC /* ViewController.swift */,
+				77579BCE247775DF00E8FBDB /* RatingControl.swift */,
 				77E41D9E24758E9E00B798DC /* Main.storyboard */,
 				77E41DA124758EA200B798DC /* Assets.xcassets */,
 				77E41DA324758EA200B798DC /* LaunchScreen.storyboard */,
@@ -200,6 +203,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77579BCF247775DF00E8FBDB /* RatingControl.swift in Sources */,
 				77E41D9D24758E9E00B798DC /* ViewController.swift in Sources */,
 				77E41D9924758E9E00B798DC /* AppDelegate.swift in Sources */,
 				77E41D9B24758E9E00B798DC /* SceneDelegate.swift in Sources */,
