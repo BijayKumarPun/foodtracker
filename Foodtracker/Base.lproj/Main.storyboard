@@ -52,18 +52,23 @@
                                     <outletCollection property="gestureRecognizers" destination="jz1-uL-ZYq" appends="YES" id="ykG-ke-j7V"/>
                                 </connections>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JP2-nX-ivB" customClass="RatingControl" customModule="Foodtracker" customModuleProvider="target">
-                                <rect key="frame" x="44" y="548" width="200" height="110"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="JP2-nX-ivB" customClass="RatingControl" customModule="Foodtracker" customModuleProvider="target">
+                                <rect key="frame" x="20" y="548" width="374" height="110"/>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="zEz-UI-MZc" firstAttribute="trailing" secondItem="JP2-nX-ivB" secondAttribute="trailing" constant="20" id="0Eh-pb-x7g"/>
                             <constraint firstItem="bny-Fy-cQI" firstAttribute="top" secondItem="9Se-vA-Yhh" secondAttribute="bottom" constant="7.5" id="2iz-Ar-WwN"/>
+                            <constraint firstItem="JP2-nX-ivB" firstAttribute="top" secondItem="bny-Fy-cQI" secondAttribute="bottom" constant="8" id="3K0-NK-Y86"/>
                             <constraint firstItem="zEz-UI-MZc" firstAttribute="trailing" secondItem="9Se-vA-Yhh" secondAttribute="trailing" constant="20" id="7Cd-rI-sYy"/>
+                            <constraint firstItem="JP2-nX-ivB" firstAttribute="leading" secondItem="zEz-UI-MZc" secondAttribute="leading" constant="20" id="FV5-sf-MsP"/>
                             <constraint firstItem="9Se-vA-Yhh" firstAttribute="leading" secondItem="zEz-UI-MZc" secondAttribute="leading" constant="20" id="OsN-EM-lI1"/>
+                            <constraint firstItem="JP2-nX-ivB" firstAttribute="leading" secondItem="zEz-UI-MZc" secondAttribute="leading" constant="20" id="Qb9-fJ-2q3"/>
                             <constraint firstItem="bny-Fy-cQI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qgk-lf-VFg"/>
+                            <constraint firstItem="zEz-UI-MZc" firstAttribute="bottom" secondItem="JP2-nX-ivB" secondAttribute="bottom" constant="204" id="aox-t2-cuR"/>
                             <constraint firstItem="9Se-vA-Yhh" firstAttribute="top" secondItem="zEz-UI-MZc" secondAttribute="top" constant="20" id="fP5-Dh-Tgp"/>
+                            <constraint firstItem="zEz-UI-MZc" firstAttribute="trailing" secondItem="JP2-nX-ivB" secondAttribute="trailing" constant="20" id="ofH-P8-9rg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="zEz-UI-MZc"/>
                     </view>
